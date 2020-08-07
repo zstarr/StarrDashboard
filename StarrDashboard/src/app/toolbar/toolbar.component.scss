@@ -1,3 +1,4 @@
+@import '~@angular/material/theming';
 
 mat-toolbar-row {
     justify-content: space-between;
@@ -5,7 +6,6 @@ mat-toolbar-row {
 
 mat-slide-toggle {
     font-size: .875rem;
-    margin-left: 20px;
 }
 
 .logo {
@@ -13,12 +13,26 @@ mat-slide-toggle {
     justify-content: center;
     
   }
-.logo-container {
+.logo-container, .menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
+.login-button {
+    margin-left: 10px;
+}
+
 h1 {
     padding-left: 10px;
 }
+
+// @mixin menu-theme($theme) {
+//     $accent: map-get($theme, accent);
+//     $background: map-get($theme, background);
+//     $background-color: mat-color($background, mat-menu);
+  
+//     .mat-menu-panel {
+//         background: #303030 !important;
+//     }
+//   }

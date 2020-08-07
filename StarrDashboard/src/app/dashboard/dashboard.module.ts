@@ -5,7 +5,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { DashboardComponent } from './dashboard.component';
 import { TileComponent } from './tile/tile.component';
-import { ThemeService } from '../core/services/theme.service';
 
 @NgModule({
   imports: [CommonModule, MatButtonModule, MatIconModule, MatSlideToggleModule],
