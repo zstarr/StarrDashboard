@@ -1,21 +1,26 @@
-body {
-    margin: 0;
-    font-family: Roboto, sans-serif;
-  }
-  
-  mat-card {
-    max-width: 80%;
-    margin: 2em auto;
-    text-align: center;
-  }
-  
-  mat-toolbar-row {
-    justify-content: space-between;
-  }
-  
-  .done {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: white;
+
+@import '~@angular/material/theming';
+
+td-toolbar {
+    @include mat-elevation(2);
+    display: block;
+}
+
+.content {
+    padding: 4rem 6px;
+    display: flex;
+}
+
+aside {
+    flex: 1;
+}
+
+td-dashboard {
+    flex: 5;
+}
+
+@media only screen and (max-width: 600px)  {
+    aside {
+      flex: 0;
+    }
   }

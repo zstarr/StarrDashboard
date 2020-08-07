@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
-import { MatMenu, MatMenuModule } from "@angular/material/menu";
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { ThemeService } from './core/services/theme.service'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'StarrDashboard';
+
+  isDarkTheme: Observable<boolean>;
+
+  constructor(private themeService: ThemeService) { }
+
+  ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
+  }
 }

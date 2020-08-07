@@ -1,24 +1,10 @@
-<!-- Toolbar -->
-<div>
-  <mat-toolbar color="primary">
-    <span><mat-icon>star_outline</mat-icon></span>
-
-    <span>StarrDashboard</span>
-
-  </mat-toolbar>
-
-  <!-- <mat-card>
-    <button mat-button>All</button>
-    <button mat-raised-button>Of</button>
-    <button mat-raised-button color="primary">The</button>
-    <button mat-raised-button color="accent">Buttons</button>
-  </mat-card>
-
-  <span class="done">
-    <button mat-fab>
-      <mat-icon>check circle</mat-icon>
-    </button>
-  </span> -->
+<div [ngClass]="{'dark-theme': isDarkTheme | async}">
+  <div class="mat-app-background">
+    <td-toolbar></td-toolbar>
+    <div class="content mat-typography">
+      <aside></aside>
+      <td-dashboard></td-dashboard>
+      <aside></aside>
+    </div>
+  </div>
 </div>
-
-<router-outlet></router-outlet>

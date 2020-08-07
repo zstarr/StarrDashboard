@@ -1,0 +1,25 @@
+
+h1 {
+    font-weight: 200;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    td-tile {
+        flex: 30%;
+        margin: 0 10px 10px 0;
+    }
+}
+
+mat-slide-toggle {
+    margin-bottom: 10px;
+}

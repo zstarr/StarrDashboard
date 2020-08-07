@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="logo-container">
+      <div class="logo">
+        <button mat-mini-fab color="primary">
+          <mat-icon>star</mat-icon>
+        </button>
+      </div>
+      <h1>Dashboard</h1>
+    </div>
+    <div class="menu">
+      <mat-slide-toggle
+        [checked]="isDarkTheme | async"
+        labelPosition="before"
+        (change)="toggleDarkTheme($event.checked)"
+        color="primary"
+        >Dark theme</mat-slide-toggle
+      >
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
