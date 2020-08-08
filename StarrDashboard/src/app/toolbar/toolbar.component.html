@@ -16,10 +16,6 @@
           </button>
 
           <mat-menu #menu="matMenu" >
-            <button mat-menu-item>
-              <mat-icon>dialpad</mat-icon>
-              <span>Redial</span>
-            </button>
 
             <button mat-menu-item  (click)="$event.stopPropagation();">
               <mat-icon>palette</mat-icon>
@@ -45,9 +41,9 @@
                 (change)="toggleDarkTheme($event.checked)"
                 color="primary"
                 >Dark theme</mat-slide-toggle
-              >
+              >              
             <button mat-raised-button color="primary" class="login-button" (click)="login()">
-              Log In
+              <fa-icon [icon]="faTwitch" class="fa-lg"></fa-icon>Connect with Twitch
             </button>
           </div>
         </ng-template>

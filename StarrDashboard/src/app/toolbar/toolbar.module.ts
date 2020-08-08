@@ -7,6 +7,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from "@angular/material/menu";
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { ToolbarComponent } from './toolbar.component';
 
 
@@ -17,7 +19,8 @@ import { ToolbarComponent } from './toolbar.component';
     MatSlideToggleModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    FontAwesomeModule
   ],
   declarations: [ ToolbarComponent ],
   exports: [ ToolbarComponent ]
