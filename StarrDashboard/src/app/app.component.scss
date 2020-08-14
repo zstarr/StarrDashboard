@@ -1,26 +1,22 @@
-
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 
 td-toolbar {
-    @include mat-elevation(2);
-    display: block;
+  @include mat-elevation(2);
+  display: block;
 }
 
 .content {
-    padding: 4rem 6px;
-    display: flex;
+  padding: 4rem 6px;
+  display: flex;
+  flex: 1;
 }
 
-aside {
-    flex: 1;
-}
-
-td-dashboard {
-    flex: 5;
-}
-
-@media only screen and (max-width: 600px)  {
-    aside {
-      flex: 0;
-    }
+@media only screen and (max-width: 600px) {
+  aside {
+    flex: 0;
   }
+}
+
+.theme-container, .mat-app-background {
+    height: 100%;
+}

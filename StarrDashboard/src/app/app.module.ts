@@ -6,7 +6,7 @@ import { ToolbarModule } from './toolbar/toolbar.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CoreModule,
     ToolbarModule,
     DashboardModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule    
   ],
   bootstrap: [AppComponent]
 })

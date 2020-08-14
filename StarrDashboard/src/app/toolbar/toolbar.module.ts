@@ -8,8 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { LoginMenuComponent } from "../login-menu/login-menu.component";
 import { ToolbarComponent } from './toolbar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -19,9 +20,9 @@ import { ToolbarComponent } from './toolbar.component';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
-    FontAwesomeModule,
+    FontAwesomeModule,        
   ],
-  declarations: [ToolbarComponent],
+  declarations: [ToolbarComponent, LoginMenuComponent],
   exports: [ToolbarComponent],
 })
 export class ToolbarModule {}

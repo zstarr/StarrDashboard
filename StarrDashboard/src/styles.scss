@@ -5,11 +5,14 @@
 html, body {
   margin: 0;
   height: 100%;
-  width: fit-content;
 }
 
 @media only screen and (max-width: 600px)  {
   html {
     font-size: 80%;
   }
+}
+
+app-route {
+  height: 100%;
 }
